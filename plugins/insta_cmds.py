@@ -26,7 +26,7 @@ async def post(bot, message):
         await message.reply_text(
             HOME_TEXT.format(message.from_user.first_name, message.from_user.id,
 			disable_web_page_preview=True
-        )
+        ))
         return
     text=message.text
     username=USER
