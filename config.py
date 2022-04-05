@@ -5,7 +5,7 @@ class Config:
     API_HASH = os.environ.get("API_HASH", "4af625c75eb9e72e1b228411b0c7cd42")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "1989301834:AAEX-GrbfLqHKybYgL2W_01OUKdv3OCK5ss") 
     USER = os.environ.get("INSTAGRAM_USERNAME", "@itz_.programmer")
-    OWNER = os.environ.get("OWNER_ID", "136661685")
+    OWNER = os.environ.get("OWNER_ID", "1366616835")
     INSTA_SESSIONFILE_ID = os.environ.get("INSTA_SESSIONFILE_ID", None)
     S = "0"
     STATUS = set(int(x) for x in (S).split())
