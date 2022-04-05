@@ -238,12 +238,12 @@ async def highlights(bot, message):
     await download_insta(command, m, dir)
     await upload(m, bot, chat_id, dir)
 
-@Client.on_message(filters.private & filters.command(["profile_pic", "dp"]))
+@Client.on_message(filters.private & filters.command(["dp"]))
 async def dp(_, msg):
     status = await msg.reply('ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ....', quote=True)
     if len(msg.command) == 1:
         await msg.reply("ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ ᴜsᴇ ᴇᴍᴘᴛʏ ᴄᴏᴍᴍᴀɴᴅ. ʙᴇʟᴏᴡ ɪs ᴛʜᴇ ʀɪɢʜᴛ ғᴏʀᴍᴀᴛ ᴛᴏ ɢᴇᴛ ᴀ ᴘʀᴏғɪʟᴇ ᴘɪᴄ. "
-                        "\n\n`/profile_pic instagram-username` \n\nExample : `/profile_pic taaarannn`")
+                        "\n\n`/profile_pic instagram-username` \n\nExample : `/dp taaarannn`")
         return
     elif len(msg.command) > 2:
         await msg.reply("Use 1 username at a time.")
